@@ -142,9 +142,7 @@ function launch-background() {
 }
 
 function launch-all() {
-    echo "Starting pulseaudio"
-    sudo apt-get remove pulseaudio
-    sudo apt-get install pulseaudio
+
     echo "Starting all mycroft-core services"
     launch-background bus
     launch-background skills
