@@ -142,6 +142,8 @@ function launch-background() {
 }
 
 function launch-all() {
+    echo "Starting pulseaudio"
+    pulseaudio --start
     echo "Starting all mycroft-core services"
     launch-background bus
     launch-background skills
